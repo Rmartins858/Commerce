@@ -1,14 +1,23 @@
 use('commerce')
 
-db.resumoProdutos.insertOne({
-    franquia: "McDonalds",
-    totalProdutos: db.produtos.count({}),
+db.produtos.updateMany({
+    nome: {
+        $in: [
+             "Big Mac",
+              "Quarteirão com Queijo",
+             ],
+    },
+},
+{
+    $addToSet: {
+      ingredientes: "bacon",
+    },
+  
 })
-db.resumoProdutos.find(
-  {},
-  {
-    franquia: 1,
-    totalProdutos: 1,
-    _id: 0,
-  },
-);
+
+db.produtos.find({},
+    {
+    _id: false,
+    nome: 1,
+    ingredientes: 1,
+})
