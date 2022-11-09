@@ -8,7 +8,7 @@ db.produtos.updateMany(
     $addToSet: {
       ingredientes: "bacon",
     },
-  }
+  },
 );
 
 db.produtos.find(
