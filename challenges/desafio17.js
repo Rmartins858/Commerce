@@ -8,5 +8,5 @@ db.resumoProdutos.find(
     _id: false,
     franquia: 1,
     totalProdutos: 1,
-  }
+  },
 );
