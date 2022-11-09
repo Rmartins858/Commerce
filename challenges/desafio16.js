@@ -22,4 +22,3 @@ db.produtos.updateMany(
       nome: 1,
     },
   );
-  
