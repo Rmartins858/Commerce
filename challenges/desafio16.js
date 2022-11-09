@@ -1,10 +1,10 @@
 db.produtos.updateMany(
     {
-      nome: {$eq: "Big Mac"},
+      nome: { $eq: "Big Mac" },
     },
     {
       $set: {
-        ultimaModificacao: {$type: "timestamp"},
+        ultimaModificacao: { $type: "timestamp" },
       },
     },
   );
