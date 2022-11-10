@@ -1,25 +1,19 @@
 use('commerce')
 
-db.produtos.updateOne(
+db.produtos.updateMany(
   {},
   {
     $push: {
-      tags: {
-        $each: [
-         "combo", "tasty"
-        ],
-        $sort: 1,
+      valoresNutricionais: {
+        $each: [],
+        $sort: { percentual: -1 },
       },
     },
-  },
-  { upsert: true },
+  }
 );
 
-db.produtos.find(
-  {},
-  {
+db.produtos.find({}, {
     _id: 0,
     nome: 1,
-    tags: 1,
-  },
-);
+    valoresNutricionais: 1,
+});
