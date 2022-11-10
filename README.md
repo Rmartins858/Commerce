@@ -1,3 +1,15 @@
+
+<details>
+  <summary>
+    <strong>👨‍💻 O que deverá ser desenvolvido</strong>
+  </summary><br>
+
+  Agora que você já aprendeu **MongoDB**, chegou a hora de praticar todos os conceitos ensinados até aqui por meio do projeto _commerce_!
+
+  Nesse projeto, você vai trabalhar com o banco de dados `commerce`, que contém dados do cardápio do **McDonald's**, como ingredientes, valores nutricionais e dados fictícios de vendas. As instruções de como restaurar o banco podem ser lidas a seguir.
+
+</details>
+
 # Requisitos
 
 ### 1 - Retorne a quantidade de documentos inseridos na coleção `produtos`
