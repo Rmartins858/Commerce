@@ -7,5 +7,5 @@ db.produtos.find(
   {
     nome: 1,
     _id: false,
-  }
+  },
 );
