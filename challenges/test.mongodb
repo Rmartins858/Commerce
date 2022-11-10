@@ -1,24 +1,19 @@
 use('commerce')
 
-// db.produtos.updateOne(
-//   { name: "Banana" },
-//   { $rename: {
-//       "name": "productName"
-//     }
-//   }
-// );
-
-db.produtos.updateMany({}, {
+db.produtos.updateMany(
+  {},
+  {
     $rename: {
-        descricao: "descricaoSite",
-    }
-})
+      descricao: "descricaoSite",
+    },
+  },
+);
 
 db.produtos.find(
   {},
   {
     nome: 1,
     descricaoSite: 1,
-    _id: 0,
+    _id: false,
   },
 );
