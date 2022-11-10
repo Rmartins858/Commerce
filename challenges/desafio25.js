@@ -15,7 +15,6 @@ db.produtos.updateMany(
       },
     },
   );
-  
   db.produtos.find(
     {},
     {
@@ -24,4 +23,3 @@ db.produtos.updateMany(
       tags: 1,
     },
   );
-  
